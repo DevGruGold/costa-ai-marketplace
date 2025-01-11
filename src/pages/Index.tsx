@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import AudioPlayer from "@/components/AudioPlayer";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
           <p className="text-gray-600">Coming soon...</p>
         </div>
       </main>
+      <AudioPlayer />
       <Footer />
     </div>
   );

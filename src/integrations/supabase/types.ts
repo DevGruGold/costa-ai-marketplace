@@ -589,6 +589,42 @@ export type Database = {
         }
         Relationships: []
       }
+      vendors: {
+        Row: {
+          business_name: string
+          contact_email: string | null
+          created_at: string | null
+          description: string | null
+          id: string
+          is_approved: boolean | null
+          social_links: Json | null
+          user_address: string
+          website_url: string | null
+        }
+        Insert: {
+          business_name: string
+          contact_email?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          is_approved?: boolean | null
+          social_links?: Json | null
+          user_address: string
+          website_url?: string | null
+        }
+        Update: {
+          business_name?: string
+          contact_email?: string | null
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          is_approved?: boolean | null
+          social_links?: Json | null
+          user_address?: string
+          website_url?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
